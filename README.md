@@ -1,4 +1,3 @@
-# ssm_demo
+# SmartBIcycle
 ## 说明
-tag:basic-ssm 基本的ssm框架
-tag:basic-ssm-with-unit-test 基本的ssm带测试框架
+采用ssm框架
