@@ -32,7 +32,7 @@ public class UserAction {
             e.printStackTrace();
         }
         //设置标题
-        title="My User Page"+new Date();
+        title=""+new Date();
         return "success";
     }
 
