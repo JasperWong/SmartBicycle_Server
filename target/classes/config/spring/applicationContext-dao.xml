@@ -26,7 +26,7 @@
 
     <!--自动扫描mapper接口，并注入sqlsession-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.lulee007.ssm.mapper"/>
+        <property name="basePackage" value="com.jasper.ssm.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSession"/>
     </bean>
 

@@ -2,7 +2,7 @@
   <artifact type="war" name="SmartBicycle_Server:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="ssm_demo.war">
-      <element id="artifact" artifact-name="SmartBicycle:war exploded" />
+      <element id="artifact" artifact-name="SmartBicycle_Server:war exploded" />
     </root>
   </artifact>
 </component>
