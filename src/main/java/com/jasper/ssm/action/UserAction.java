@@ -20,19 +20,28 @@ public class UserAction {
     private UserService userService;
 
     private String title;
+    private User user1;
     private List<User> users;
+
 
     //action 默认执行的入口
     public String execute(){
         try {
+
+
             //取出所有user
+//            userService.insertUser(user);
             users=userService.findUser();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+//        user.setUsername("123");
+//        user.setSex("女");
+//        user.setAddress("3421");
         //设置标题
         title=""+new Date();
+//        user1=new User();
         return "success";
     }
 
@@ -58,5 +67,13 @@ public class UserAction {
 
     public void setUsers(List<User> users) {
         this.users = users;
+    }
+
+    public User getUser() {
+        return user1;
+    }
+
+    public void setUser(User user) {
+        this.user1 = user;
     }
 }

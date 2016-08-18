@@ -13,7 +13,7 @@
     <title>登录</title>
 </head>
 <body>
-<form action="/ssm/user/login" method="post" id="myform">
+<form action="/SmartBicycle_Server/user/index" method="post" id="myform">
     <input type="text" id="username" name="username"/>
     <input type="password" id="password" name="password"/>
     <input type="submit" value="提交" id="login" />

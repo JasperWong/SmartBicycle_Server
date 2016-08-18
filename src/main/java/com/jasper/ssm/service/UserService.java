@@ -14,6 +14,6 @@ public interface UserService {
      * @throws Exception
      */
     List<User> findUser()throws Exception;
-
+    void insertUser(User user);
     Boolean saveUser(User user) throws  Exception;
 }

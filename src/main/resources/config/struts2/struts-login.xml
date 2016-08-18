@@ -3,17 +3,16 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
         "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-    <package name="home" extends="my-struts" namespace="/login">
-
+    <package name="login" extends="my-struts" namespace="/user">
         <!-- User 列表页 -->
         <action name="login" class="com.jasper.ssm.action.LoginAction">
             <!--action 返回值为success时,则返回页面user.jsp,并解析为html展示到网页-->
-            <result name="success">/WEB-INF/pages/welcome.jsp</result>
+            <result name="success">/WEB-INF/views/welcome.jsp</result>
         </action>
 
     </package>
 
-    <package name="test" extends="my-struts" namespace="/user">
+    <package name="index" extends="my-struts" namespace="/user">
 
     <!-- User 列表页 -->
     <action name="index" class="com.jasper.ssm.action.UserAction">

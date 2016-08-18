@@ -1,6 +1,7 @@
 package com.jasper.ssm.action;
 
 import com.jasper.ssm.pojo.Login;
+import com.jasper.ssm.pojo.User;
 import com.jasper.ssm.service.LoginService;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -21,20 +22,24 @@ public class LoginAction {
     @Resource
     private LoginService loginService;
     private String username;
+    private String password;
+    private User user;
 
+    public String getSex() {
+        user.setSex(sex);
+        user.setUsername(username);
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    private String sex;
 //    @RequestMapping(value="/login",method= RequestMethod.POST)
     public String execute(){
         System.out.print(username);
         return "success";
-    }
-
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String login(Login user, Model model) throws Exception {
@@ -46,4 +51,19 @@ public class LoginAction {
         return "fail";
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public String getPassword() {
+        loginService.insert(user);
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

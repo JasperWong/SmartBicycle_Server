@@ -23,6 +23,10 @@ public class UserServiceImpl implements UserService {
         return users;
     }
 
+    public void insertUser(User user) {
+        userMapper.insert(user);
+    }
+
     public Boolean saveUser(User user) throws Exception {
         return userMapper.insertSelective(user)==1;
     }
