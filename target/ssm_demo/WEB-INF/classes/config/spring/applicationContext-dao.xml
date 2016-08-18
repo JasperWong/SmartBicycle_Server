@@ -2,7 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+>
 
     <!--获取数据库配置文件-->
     <context:property-placeholder location="classpath:mysql_db.properties"/>
@@ -18,6 +21,8 @@
         <property name="maxIdleTime" value="60"/>
     </bean>
 
+
+
     <!--sqlsessionFactory bean-->
     <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="configLocation" value="classpath:config/mybatis/SqlMapConfig.xml"/>
@@ -26,8 +31,17 @@
 
     <!--自动扫描mapper接口，并注入sqlsession-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.lulee007.ssm.mapper"/>
+        <property name="basePackage" value="com.jasper.ssm.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSession"/>
-    </bean>
 
+    </bean>
+    <!-- mybatis文件配置，扫描所有mapper文件 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" p:dataSource-ref="dataSource"
+          p:configLocation="classpath:config/mybatis/SqlMapConfig.xml"
+          p:mapperLocations="classpath:com/jasper/ssm/mapper/*.xml"/>
+
+    <!-- spring与mybatis整合配置，扫描所有dao -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
+          p:basePackage="com.jasper.ssm.dao"
+          p:sqlSessionFactoryBeanName="sqlSessionFactory"/>
 </beans>
