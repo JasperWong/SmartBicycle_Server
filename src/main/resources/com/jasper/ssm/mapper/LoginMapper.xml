@@ -4,17 +4,19 @@
 <mapper namespace="com.jasper.ssm.mapper.LoginMapper" >
 
     <resultMap type="com.jasper.ssm.pojo.Login" id="userMap">
-        <id property="id" column="id" />
-        <result property="username" column="username" />
-        <result property="password" column="password" />
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="distance" property="distance" jdbcType="FLOAT" />
+        <result column="hour" property="hour" jdbcType="FLOAT" />
+        <result column="times" property="times" jdbcType="INTEGER" />
     </resultMap>
     
-    <select id="getUserByName" parameterType="string" resultMap="userMap">
-        select * from T_USER where username = #{username}
-    </select>
+    <!--<select id="getUserByName" parameterType="string" resultMap="userMap">-->
+        <!--select * from T_USER where username = #{username}-->
+    <!--</select>-->
 
     <insert id="insertUser" parameterType="com.jasper.ssm.pojo.User" >
-        insert into user (id, username, birthday,
+        insert into user_total (id, username, birthday,
         sex, address)
         values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE},
         #{sex,jdbcType=CHAR}, #{address,jdbcType=VARCHAR})

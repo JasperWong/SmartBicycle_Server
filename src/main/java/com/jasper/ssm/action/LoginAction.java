@@ -25,17 +25,17 @@ public class LoginAction {
     private String password;
     private User user;
 
-    public String getSex() {
-        user.setSex(sex);
-        user.setUsername(username);
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    private String sex;
+//    public String getSex() {
+//        user.setSex(sex);
+//        user.setUsername(username);
+//        return sex;
+//    }
+//
+//    public void setSex(String sex) {
+//        this.sex = sex;
+//    }
+//
+//    private String sex;
 //    @RequestMapping(value="/login",method= RequestMethod.POST)
     public String execute(){
         System.out.print(username);

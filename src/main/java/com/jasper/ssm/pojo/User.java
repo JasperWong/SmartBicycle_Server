@@ -7,11 +7,17 @@ public class User {
 
     private String username;
 
-    private Date birthday;
+    private float distance;
 
-    private String sex;
+    private float hour;
 
-    private String address;
+    private int times;
+
+//    private Date birthday;
+//
+//    private String sex;
+//
+//    private String address;
 
     public Integer getId() {
         return id;
@@ -28,28 +34,51 @@ public class User {
     public void setUsername(String username) {
         this.username = username == null ? null : username.trim();
     }
-
-    public Date getBirthday() {
-        return birthday;
+    public float getHour() {
+        return hour;
     }
 
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
+    public void setHour(float hour) {
+        this.hour = hour;
     }
 
-    public String getSex() {
-        return sex;
+    public float getDistance() {
+        return distance;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex == null ? null : sex.trim();
+    public void setDistance(float distance) {
+        this.distance = distance;
     }
 
-    public String getAddress() {
-        return address;
+    public int getTimes() {
+        return times;
     }
 
-    public void setAddress(String address) {
-        this.address = address == null ? null : address.trim();
+    public void setTimes(int times) {
+        this.times = times;
     }
+//
+//    public Date getBirthday() {
+//        return birthday;
+//    }
+//
+//    public void setBirthday(Date birthday) {
+//        this.birthday = birthday;
+//    }
+//
+//    public String getSex() {
+//        return sex;
+//    }
+//
+//    public void setSex(String sex) {
+//        this.sex = sex == null ? null : sex.trim();
+//    }
+//
+//    public String getAddress() {
+//        return address;
+//    }
+//
+//    public void setAddress(String address) {
+//        this.address = address == null ? null : address.trim();
+//    }
 }
