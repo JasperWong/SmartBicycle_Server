@@ -3,6 +3,8 @@ package com.jasper.ssm.action;
 import com.jasper.ssm.pojo.Login;
 import com.jasper.ssm.pojo.User;
 import com.jasper.ssm.service.LoginService;
+import com.jasper.ssm.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,38 +19,39 @@ import java.util.Date;
  */
 @Controller
 @Scope(value="prototype")
-//@RequestMapping("/user")
 public class LoginAction {
-    @Resource
-    private LoginService loginService;
+    @Autowired
+    private UserService userService;
     private String username;
-    private String password;
-    private User user;
+    private float distance;
+    private float hour;
+    private int times;
+    private User user=new User();
 
-//    public String getSex() {
-//        user.setSex(sex);
-//        user.setUsername(username);
-//        return sex;
-//    }
-//
-//    public void setSex(String sex) {
-//        this.sex = sex;
-//    }
-//
-//    private String sex;
-//    @RequestMapping(value="/login",method= RequestMethod.POST)
     public String execute(){
+        user.setUsername(username);
+        user.setDistance(distance);
+        user.setHour(hour);
+        user.setTimes(times);
+        userService.insertUser(user);
         System.out.print(username);
         return "success";
     }
 
-    public String login(Login user, Model model) throws Exception {
-        user= loginService.checkLogin(user.getUsername(), user.getPassword());
-        if(user!=null){
-            model.addAttribute(user);
-            return "welcome";// 路径 WEB-INF/pages/welcome.jsp
-        }
-        return "fail";
+//    public String login(Login user, Model model) throws Exception {
+//        user= loginService.checkLogin(user.getUsername(), user.getPassword());
+//        if(user!=null){
+//            model.addAttribute(user);
+//            return "welcome";// 路径 WEB-INF/pages/welcome.jsp
+//        }
+//        return "fail";
+//    }
+    public float getDistance() {
+        return distance;
+    }
+
+    public void setDistance(float distance) {
+        this.distance = distance;
     }
 
     public String getUsername() {
@@ -58,12 +61,21 @@ public class LoginAction {
     public void setUsername(String username) {
         this.username = username;
     }
-    public String getPassword() {
-        loginService.insert(user);
-        return password;
+
+    public int getTimes() {
+        return times;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setTimes(int times) {
+        this.times = times;
+    }
+
+
+    public float getHour() {
+        return hour;
+    }
+
+    public void setHour(float hour) {
+        this.hour = hour;
     }
 }

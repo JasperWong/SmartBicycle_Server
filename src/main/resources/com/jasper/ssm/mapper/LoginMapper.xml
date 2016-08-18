@@ -16,8 +16,8 @@
     <!--</select>-->
 
     <insert id="insertUser" parameterType="com.jasper.ssm.pojo.User" >
-        insert into user_total (id, username, birthday,
-        sex, address)
+        insert into user_total (id, username, distance,
+        hour, times)
         values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE},
         #{sex,jdbcType=CHAR}, #{address,jdbcType=VARCHAR})
     </insert>

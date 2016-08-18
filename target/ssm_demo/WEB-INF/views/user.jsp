@@ -22,13 +22,13 @@
             Name
         </td>
         <td>
-            Birthday
+            Distance
         </td>
         <td>
-            Sex
+            Hour
         </td>
         <td>
-            Address
+            Times
         </td>
     </tr>
     </thead>
@@ -37,9 +37,9 @@
     <s:iterator value="users" id="user">
         <tr>
             <td>${user.username}</td>
-            <td>${user.birthday}</td>
-            <td>${user.sex}</td>
-            <td>${user.address}</td>
+            <td>${user.distance}</td>
+            <td>${user.hour}</td>
+            <td>${user.times}</td>
         </tr>
 
     </s:iterator>

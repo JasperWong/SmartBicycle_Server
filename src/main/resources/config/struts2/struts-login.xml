@@ -3,9 +3,9 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
         "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-    <package name="login" extends="my-struts" namespace="/user">
+    <package name="insert" extends="my-struts" namespace="/user">
         <!-- User 列表页 -->
-        <action name="login" class="com.jasper.ssm.action.LoginAction">
+        <action name="insert" class="com.jasper.ssm.action.LoginAction">
             <!--action 返回值为success时,则返回页面user.jsp,并解析为html展示到网页-->
             <result name="success">/WEB-INF/views/welcome.jsp</result>
         </action>

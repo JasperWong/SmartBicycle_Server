@@ -41,7 +41,7 @@ public class UserAction {
 //        user.setAddress("3421");
         //设置标题
         title=""+new Date();
-        user1=new User();
+//        user1=new User();
         return "success";
     }
 
