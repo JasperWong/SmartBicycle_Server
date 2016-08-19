@@ -65,7 +65,7 @@
 
     <!-- 加载业务-Action配置   -->
     <!--<include file="config/struts2/struts-user.xml"/>-->
-    <include file="config/struts2/struts-login.xml"/>
+    <include file="config/struts2/struts-user.xml"/>
 
       
 </struts>

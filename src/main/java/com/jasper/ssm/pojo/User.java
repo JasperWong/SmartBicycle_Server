@@ -13,11 +13,45 @@ public class User {
 
     private int times;
 
-//    private Date birthday;
-//
-//    private String sex;
-//
-//    private String address;
+    private int select;
+
+    private String date;
+
+    private float distance_day;
+
+    private float distance_hour;
+
+    public float getDistance_day() {
+        return distance_day;
+    }
+
+    public void setDistance_day(float distance_day) {
+        this.distance_day = distance_day;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public float getDistance_hour() {
+        return distance_hour;
+    }
+
+    public void setDistance_hour(float distance_hour) {
+        this.distance_hour = distance_hour;
+    }
+
+    public int getSelect() {
+        return select;
+    }
+
+    public void setSelect(int select) {
+        this.select = select;
+    }
 
     public Integer getId() {
         return id;

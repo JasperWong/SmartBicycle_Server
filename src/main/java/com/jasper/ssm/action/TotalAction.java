@@ -20,7 +20,7 @@ import java.util.concurrent.ExecutionException;
  */
 @Controller
 @Scope(value="prototype")
-public class LoginAction {
+public class TotalAction {
     @Autowired
     private UserService userService;
     private String username;
@@ -32,7 +32,6 @@ public class LoginAction {
 
     public String execute(){
         if(username!=null) {
-            user.setId(id);
             user.setUsername(username);
             user.setDistance(distance);
             user.setHour(hour);

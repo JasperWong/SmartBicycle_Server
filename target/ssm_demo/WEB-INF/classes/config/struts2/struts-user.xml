@@ -3,13 +3,27 @@
         "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
         "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-    <package name="home" extends="my-struts" namespace="/user">
-
+    <package name="insert" extends="my-struts" namespace="/user">
         <!-- User 列表页 -->
-        <action name="index" class="com.jasper.ssm.action.UserAction">
+        <action name="insert" class="com.jasper.ssm.action.TotalAction">
             <!--action 返回值为success时,则返回页面user.jsp,并解析为html展示到网页-->
-            <result name="success">/WEB-INF/views/user.jsp</result>
+            <result name="success">/WEB-INF/views/welcome.jsp</result>
         </action>
+    </package>
 
+    <package name="index" extends="my-struts" namespace="/user">
+    <!-- User 列表页 -->
+    <action name="index" class="com.jasper.ssm.action.UserAction">
+        <!--action 返回值为success时,则返回页面user.jsp,并解析为html展示到网页-->
+        <result name="success">/WEB-INF/views/user.jsp</result>
+    </action>
+
+</package>
+    <package name="day" extends="my-struts" namespace="/user">
+        <!-- User 列表页 -->
+        <action name="insertDay" class="com.jasper.ssm.action.DayAction">
+            <!--action 返回值为success时,则返回页面user.jsp,并解析为html展示到网页-->
+            <result name="success">/WEB-INF/views/welcome.jsp</result>
+        </action>
     </package>
 </struts>
