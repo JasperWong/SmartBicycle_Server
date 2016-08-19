@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6ecfd3d-8a6d-4467-b145-c463fd5ee950" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserDayAction.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/DayAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/TotalAction.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/UserAction.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/UserAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/User.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/User.class" />
@@ -16,15 +13,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/service/UserService.class" afterPath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/service/UserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmartBicycle_Server.iml" afterPath="$PROJECT_DIR$/SmartBicycle_Server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-core.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-core.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-user.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-user.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/struts2/struts-core.xml" afterPath="$PROJECT_DIR$/target/classes/config/struts2/struts-core.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/struts2/struts-user.xml" afterPath="$PROJECT_DIR$/target/classes/config/struts2/struts-user.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.xml" />
@@ -84,37 +72,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts-core.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config/struts2/struts-core.xml">
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.45454547">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="struts-login.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config/struts2/struts-login.xml">
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.89899">
-              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/LoginMapper.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.7407408">
+              <caret line="213" column="24" selection-start-line="213" selection-start-column="24" selection-end-line="213" selection-end-column="24" />
+              <folding>
+                <marker date="1471628317635" expanded="true" signature="267:598" placeholder="..." />
+                <marker date="1471628317635" expanded="true" signature="3743:3843" placeholder="select from user" />
+                <marker date="1471628317635" expanded="true" signature="3930:3984" placeholder="delete from " />
+                <marker date="1471628317635" expanded="true" signature="4082:4098" placeholder="delete from " />
+                <marker date="1471628317635" expanded="true" signature="4273:4483" placeholder="insert into user_total... " />
+                <marker date="1471628317635" expanded="true" signature="5563:5588" placeholder="select count... user" />
+                <marker date="1471628317635" expanded="true" signature="6479:6731" placeholder="update user " />
+                <marker date="1471628317635" expanded="true" signature="6937:7372" placeholder="update user " />
+                <marker date="1471628317635" expanded="true" signature="7466:7686" placeholder="update user " />
+                <marker date="1471628317635" expanded="true" signature="7729:8108" placeholder="insert INTO user_total... " />
+                <marker date="1471628317635" expanded="true" signature="8109:8296" placeholder="UPDATE usern... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -125,6 +119,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -150,21 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/LoginExample.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1262,7 +1256,7 @@
       <workItem from="1471243983674" duration="6276000" />
       <workItem from="1471443093653" duration="21898000" />
       <workItem from="1471532031447" duration="23573000" />
-      <workItem from="1471628485432" duration="572000" />
+      <workItem from="1471628485432" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="fix the project">
       <created>1471443638209</created>
@@ -1294,11 +1288,17 @@
       <option name="project" value="LOCAL" />
       <updated>1471549027598</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="increasing new action">
+      <created>1471629094990</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1471629094990</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83797000" />
+    <option name="totallyTimeSpent" value="83972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -1313,7 +1313,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1351,7 +1351,8 @@
     <MESSAGE value="finish insert and before change the table" />
     <MESSAGE value="finish the database change" />
     <MESSAGE value="finish url insert" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish url insert" />
+    <MESSAGE value="increasing new action" />
+    <option name="LAST_COMMIT_MESSAGE" value="increasing new action" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1388,22 +1389,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#530#531#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-            <element signature="e#698#699#0" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-            <element signature="e#764#765#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-            <element signature="e#842#843#0" expanded="false" />
-            <element signature="e#882#883#0" expanded="false" />
-            <element signature="e#911#912#0" expanded="false" />
-            <element signature="e#939#940#0" expanded="false" />
-            <element signature="e#978#979#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1428,6 +1414,16 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1471628317635" expanded="true" signature="267:598" placeholder="..." />
+            <marker date="1471628317635" expanded="true" signature="3743:3843" placeholder="select from user" />
+            <marker date="1471628317635" expanded="true" signature="3930:3984" placeholder="delete from " />
+            <marker date="1471628317635" expanded="true" signature="4082:4098" placeholder="delete from " />
+            <marker date="1471628317635" expanded="true" signature="4273:4483" placeholder="insert into user_total... " />
+            <marker date="1471628317635" expanded="true" signature="5563:5588" placeholder="select count... user" />
+            <marker date="1471628317635" expanded="true" signature="6479:6731" placeholder="update user " />
+            <marker date="1471628317635" expanded="true" signature="6937:7372" placeholder="update user " />
+            <marker date="1471628317635" expanded="true" signature="7466:7686" placeholder="update user " />
+            <marker date="1471628317635" expanded="true" signature="7729:8108" placeholder="insert INTO user_total... " />
+            <marker date="1471628317635" expanded="true" signature="8109:8296" placeholder="UPDATE usern... " />
           </folding>
         </state>
       </provider>
@@ -1494,6 +1490,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1594,6 +1591,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2727273">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="13" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1608,29 +1606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="51" selection-start-column="1" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#530#531#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-            <element signature="e#698#699#0" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-            <element signature="e#764#765#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-            <element signature="e#842#843#0" expanded="false" />
-            <element signature="e#882#883#0" expanded="false" />
-            <element signature="e#911#912#0" expanded="false" />
-            <element signature="e#939#940#0" expanded="false" />
-            <element signature="e#978#979#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1708,24 +1684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="51" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
-          <folding>
-            <marker date="1471628317635" expanded="true" signature="267:598" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1734,22 +1692,6 @@
             <element signature="e#733#734#0" expanded="true" />
             <element signature="e#772#773#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1768,14 +1710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/LoginExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1799,6 +1733,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.833333">
+          <caret line="31" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7407408">
+          <caret line="213" column="24" selection-start-line="213" selection-start-column="24" selection-end-line="213" selection-end-column="24" />
+          <folding>
+            <marker date="1471628317635" expanded="true" signature="267:598" placeholder="..." />
+            <marker date="1471628317635" expanded="true" signature="3743:3843" placeholder="select from user" />
+            <marker date="1471628317635" expanded="true" signature="3930:3984" placeholder="delete from " />
+            <marker date="1471628317635" expanded="true" signature="4082:4098" placeholder="delete from " />
+            <marker date="1471628317635" expanded="true" signature="4273:4483" placeholder="insert into user_total... " />
+            <marker date="1471628317635" expanded="true" signature="5563:5588" placeholder="select count... user" />
+            <marker date="1471628317635" expanded="true" signature="6479:6731" placeholder="update user " />
+            <marker date="1471628317635" expanded="true" signature="6937:7372" placeholder="update user " />
+            <marker date="1471628317635" expanded="true" signature="7466:7686" placeholder="update user " />
+            <marker date="1471628317635" expanded="true" signature="7729:8108" placeholder="insert INTO user_total... " />
+            <marker date="1471628317635" expanded="true" signature="8109:8296" placeholder="UPDATE usern... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1817,10 +1803,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.833333">
-          <caret line="31" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/LoginExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding />
         </state>
       </provider>
