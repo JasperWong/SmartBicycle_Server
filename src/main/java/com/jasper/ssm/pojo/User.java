@@ -13,12 +13,6 @@ public class User {
 
     private int times;
 
-//    private Date birthday;
-//
-//    private String sex;
-//
-//    private String address;
-
     public Integer getId() {
         return id;
     }
@@ -57,28 +51,4 @@ public class User {
     public void setTimes(int times) {
         this.times = times;
     }
-//
-//    public Date getBirthday() {
-//        return birthday;
-//    }
-//
-//    public void setBirthday(Date birthday) {
-//        this.birthday = birthday;
-//    }
-//
-//    public String getSex() {
-//        return sex;
-//    }
-//
-//    public void setSex(String sex) {
-//        this.sex = sex == null ? null : sex.trim();
-//    }
-//
-//    public String getAddress() {
-//        return address;
-//    }
-//
-//    public void setAddress(String address) {
-//        this.address = address == null ? null : address.trim();
-//    }
-}
+ }
