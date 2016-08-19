@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.concurrent.ExecutionException;
 
 /**
  * Created by JasperWong on 2016/8/18.
@@ -26,15 +27,20 @@ public class LoginAction {
     private float distance;
     private float hour;
     private int times;
+    private int id;
     private User user=new User();
 
     public String execute(){
-        user.setUsername(username);
-        user.setDistance(distance);
-        user.setHour(hour);
-        user.setTimes(times);
-        userService.insertUser(user);
-        System.out.print(username);
+        if(username!=null) {
+            user.setId(id);
+            user.setUsername(username);
+            user.setDistance(distance);
+            user.setHour(hour);
+            user.setTimes(times);
+//            userService.insertUser(user);
+            userService.updateUser(user);
+        }
+//        System.out.print(username);
         return "success";
     }
 
@@ -78,4 +84,13 @@ public class LoginAction {
     public void setHour(float hour) {
         this.hour = hour;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 }

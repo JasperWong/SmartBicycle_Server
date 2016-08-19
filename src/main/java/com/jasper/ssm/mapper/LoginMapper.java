@@ -9,4 +9,5 @@ import com.jasper.ssm.pojo.User;
 public interface LoginMapper {
     public Login getUserByName(String username);
     int insertUser(User record);
+    int updateUser(User record);
 }

@@ -29,4 +29,8 @@ public class LoginServiceImpl implements LoginService {
     public void insert(User user) {
         userMapper.insertUser(user);
     }
+
+    public void update(User user) {
+        userMapper.updateUser(user);
+    }
 }

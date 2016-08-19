@@ -103,8 +103,7 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.jasper.ssm.pojo.User" >
-    insert into user_total (id, username, distance,
-      hour, times)
+    insert into user_total (id, username, distance,hour, times)
     values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{distance,jdbcType=FLOAT},
       #{hour,jdbcType=FLOAT}, #{times,jdbcType=INTEGER})
   </insert>
@@ -211,4 +210,21 @@
       address = #{address,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
-</mapper>
+
+    <update id="update">
+    insert INTO user_total
+        (id, username, distance,
+        hour, times)
+    VALUES
+    <!--<foreach collection="list" index="index" item="item"-->
+             <!--separator=",">-->
+        (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{distance,jdbcType=FLOAT},
+        #{hour,jdbcType=FLOAT}, #{times,jdbcType=INTEGER})
+    <!--</foreach>-->
+    ON DUPLICATE KEY UPDATE
+        username = #{username,jdbcType=VARCHAR},
+        distance = #{distance,jdbcType=FLOAT},
+        hour = #{distance,jdbcType=FLOAT},
+        times = #{times,jdbcType=INTEGER}
+</update>
+        </mapper>

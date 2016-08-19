@@ -18,7 +18,6 @@ public class UserAction {
     //自动注解UserService
     @Autowired
     private UserService userService;
-
     private String title;
     private User user1;
     private List<User> users;
