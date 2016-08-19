@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6ecfd3d-8a6d-4467-b145-c463fd5ee950" name="Default" comment="increasing userDay">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserDayMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserDayService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserDayServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserDayMapper.xml" />
+    <list default="true" id="b6ecfd3d-8a6d-4467-b145-c463fd5ee950" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/User.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/pojo/User.class" afterPath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/pojo/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserDayAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserDayAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/struts2/struts-core.xml" afterPath="$PROJECT_DIR$/target/classes/config/struts2/struts-core.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/ssm_demo/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.xml" />
@@ -1287,7 +1279,7 @@
       <workItem from="1471243983674" duration="6276000" />
       <workItem from="1471443093653" duration="21898000" />
       <workItem from="1471532031447" duration="23573000" />
-      <workItem from="1471628485432" duration="7813000" />
+      <workItem from="1471628485432" duration="7851000" />
     </task>
     <task id="LOCAL-00001" summary="fix the project">
       <created>1471443638209</created>
@@ -1337,11 +1329,17 @@
       <option name="project" value="LOCAL" />
       <updated>1471629983053</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="basically finish">
+      <created>1471636483145</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1471636483145</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91038000" />
+    <option name="totallyTimeSpent" value="91076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -1396,7 +1394,8 @@
     <MESSAGE value="finish url insert" />
     <MESSAGE value="increasing new action" />
     <MESSAGE value="increasing userDay" />
-    <option name="LAST_COMMIT_MESSAGE" value="increasing userDay" />
+    <MESSAGE value="basically finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="basically finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
