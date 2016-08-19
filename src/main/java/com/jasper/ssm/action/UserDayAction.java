@@ -13,7 +13,7 @@ import java.util.List;
  */
 //将这个UserAction 注解为Controller
 @Controller
-public class UserAction {
+public class UserDayAction {
 
     //自动注解UserService
     @Autowired

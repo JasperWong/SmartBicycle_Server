@@ -31,10 +31,6 @@ public class UserServiceImpl implements UserService {
         userMapper.update(user);
     }
 
-    public void updateUserDay(User user) {
-        userMapper.updateDay(user);
-    }
-
     public Boolean saveUser(User user) throws Exception {
         return userMapper.insertSelective(user)==1;
     }

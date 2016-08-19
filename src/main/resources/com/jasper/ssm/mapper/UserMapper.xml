@@ -7,8 +7,6 @@
     <result column="distance" property="distance" jdbcType="FLOAT" />
     <result column="hour" property="hour" jdbcType="FLOAT" />
     <result column="times" property="times" jdbcType="INTEGER" />
-    <result column="distance_day" property="times" jdbcType="FLOAT" />
-    <result column="date" property="times" jdbcType="VARCHAR" />
     <!--<result column="birthday" property="birthday" jdbcType="DATE" />-->
     <!--<result column="sex" property="sex" jdbcType="CHAR" />-->
     <!--<result column="address" property="address" jdbcType="VARCHAR" />-->
@@ -213,7 +211,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-  <update id="update">
+    <update id="update">
     insert INTO user_total
         (id, username, distance,
         hour, times)
@@ -229,17 +227,4 @@
         hour = #{distance,jdbcType=FLOAT},
         times = #{times,jdbcType=INTEGER}
 </update>
-
-    <update id="updateDay">
-        insert INTO user_day
-        (id, username, date,
-        distance_day)
-        VALUES
-        <!--<foreach collection="list" index="index" item="item"-->
-        <!--separator=",">-->
-        (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR},#{date,jdbcType=VARCHAR}, #{distance_day,jdbcType=FLOAT})
-        <!--</foreach>-->
-        ON DUPLICATE KEY UPDATE
-        distance_day = #{distance_day,jdbcType=FLOAT}
-    </update>
         </mapper>

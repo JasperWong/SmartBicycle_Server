@@ -16,8 +16,6 @@ public interface UserMapper {
 
     int update(User record);
 
-    int updateDay(User record);
-
     int insertSelective(User record);
 
     List<User> selectByExample(UserExample example);
