@@ -4,9 +4,11 @@
   <resultMap id="BaseResultMap" type="com.jasper.ssm.pojo.User" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="username" property="username" jdbcType="VARCHAR" />
-    <result column="distance" property="distance" jdbcType="FLOAT" />
-    <result column="hour" property="hour" jdbcType="FLOAT" />
-    <result column="times" property="times" jdbcType="INTEGER" />
+    <result column="date" property="date" jdbcType="VARCHAR" />
+    <result column="distanceDay" property="distanceDay" jdbcType="FLOAT" />
+    <result column="distanceTotal" property="distanceTotal" jdbcType="FLOAT" />
+    <result column="hourTotal" property="hourTotal" jdbcType="FLOAT" />
+    <result column="timesTotal" property="timesTotal" jdbcType="INTEGER" />
     <!--<result column="birthday" property="birthday" jdbcType="DATE" />-->
     <!--<result column="sex" property="sex" jdbcType="CHAR" />-->
     <!--<result column="address" property="address" jdbcType="VARCHAR" />-->
@@ -70,7 +72,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, username,distance,hour,times
+    id, username,date,distanceDay,distanceTotal,hourTotal,timesTotal
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jasper.ssm.pojo.UserExample" >
     select
@@ -78,7 +80,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from user_total
+    from user_day
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
@@ -212,19 +214,19 @@
   </update>
 
     <update id="update">
-    insert INTO user_total
-        (id, username, distance,
-        hour, times)
+    insert INTO user_day
+        (id, username, date,distanceDay,distanceTotal,
+        hourTotal, timesTotal)
     VALUES
     <!--<foreach collection="list" index="index" item="item"-->
              <!--separator=",">-->
-        (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{distance,jdbcType=FLOAT},
-        #{hour,jdbcType=FLOAT}, #{times,jdbcType=INTEGER})
+        (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{date,jdbcType=VARCHAR},#{distanceDay,jdbcType=FLOAT},
+         #{distanceTotal,jdbcType=FLOAT},#{hourTotal,jdbcType=FLOAT}, #{timesTotal,jdbcType=INTEGER})
     <!--</foreach>-->
     ON DUPLICATE KEY UPDATE
-        username = #{username,jdbcType=VARCHAR},
-        distance = #{distance,jdbcType=FLOAT},
-        hour = #{hour,jdbcType=FLOAT},
-        times = #{times,jdbcType=INTEGER}
+        distanceDay = #{distanceDay,jdbcType=FLOAT},
+        distanceTotal = #{distanceTotal,jdbcType=FLOAT},
+        hourTotal = #{hourTotal,jdbcType=FLOAT},
+        timesTotal = #{timesTotal,jdbcType=INTEGER}
 </update>
         </mapper>

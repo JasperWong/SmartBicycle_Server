@@ -7,11 +7,15 @@ public class User {
 
     private String username;
 
-    private float distance;
+    private String date;
 
-    private float hour;
+    private float distanceTotal;
 
-    private int times;
+    private float distanceDay;
+
+    private float hourTotal;
+
+    private int timesTotal;
 
     public Integer getId() {
         return id;
@@ -28,27 +32,44 @@ public class User {
     public void setUsername(String username) {
         this.username = username == null ? null : username.trim();
     }
-    public float getHour() {
-        return hour;
+    public String getDate() {
+        return date;
     }
 
-    public void setHour(float hour) {
-        this.hour = hour;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public float getDistance() {
-        return distance;
+    public float getDistanceTotal() {
+        return distanceTotal;
     }
 
-    public void setDistance(float distance) {
-        this.distance = distance;
+    public void setDistanceTotal(float distanceTotal) {
+        this.distanceTotal = distanceTotal;
     }
 
-    public int getTimes() {
-        return times;
+    public float getDistanceDay() {
+        return distanceDay;
     }
 
-    public void setTimes(int times) {
-        this.times = times;
+    public void setDistanceDay(float distanceDay) {
+        this.distanceDay = distanceDay;
     }
+
+    public float getHourTotal() {
+        return hourTotal;
+    }
+
+    public void setHourTotal(float hourTotal) {
+        this.hourTotal = hourTotal;
+    }
+
+    public int getTimesTotal() {
+        return timesTotal;
+    }
+
+    public void setTimesTotal(int timesTotal) {
+        this.timesTotal = timesTotal;
+    }
+
  }

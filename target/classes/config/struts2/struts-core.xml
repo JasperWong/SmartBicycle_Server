@@ -53,7 +53,7 @@
 
         <default-interceptor-ref name="myStack"/>
         <!-- comment added by lulee007 设置找不到action默认跳转的页面->首页 index -->
-        <default-action-ref name="index"/>
+        <default-action-ref name="/user/index"/>
         
         <global-results>
             <result name="json" type="json"/>

@@ -19,16 +19,22 @@
     <thead>
     <tr>
         <td>
-            Name
+            用户名
         </td>
         <td>
-            Distance
+            日期
         </td>
         <td>
-            Hour
+            日运动量(km/day)
         </td>
         <td>
-            Times
+            总运动量(km)
+        </td>
+        <td>
+            总运动时间(hour)
+        </td>
+        <td>
+            总运动次数(times)
         </td>
     </tr>
     </thead>
@@ -37,9 +43,11 @@
     <s:iterator value="users" id="user">
         <tr>
             <td>${user.username}</td>
-            <td>${user.distance}</td>
-            <td>${user.hour}</td>
-            <td>${user.times}</td>
+            <td>${user.date}</td>
+            <td>${user.distanceDay}</td>
+            <td>${user.distanceTotal}</td>
+            <td>${user.hourTotal}</td>
+            <td>${user.timesTotal}</td>
         </tr>
 
     </s:iterator>
