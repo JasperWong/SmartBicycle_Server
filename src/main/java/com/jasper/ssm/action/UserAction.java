@@ -21,15 +21,16 @@ public class UserAction {
     private String title;
     private User user1;
     private List<User> users;
-
+    private Integer id=0;
 
     //action 默认执行的入口
     public String execute(){
+        if(id!=0){
+            userService.delete(id);
+        }
         try {
             //取出所有user
-//            userService.insertUser(user);
             users=userService.findUser();
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -72,5 +73,13 @@ public class UserAction {
 
     public void setUser(User user) {
         this.user1 = user;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

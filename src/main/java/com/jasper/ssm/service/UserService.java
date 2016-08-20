@@ -1,6 +1,7 @@
 package com.jasper.ssm.service;
 
 import com.jasper.ssm.pojo.User;
+import com.jasper.ssm.pojo.UserExample;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ public interface UserService {
      * @throws Exception
      */
     List<User> findUser()throws Exception;
+    void delete(Integer id);
     void insertUser(User user);
     void updateUser(User user);
     Boolean saveUser(User user) throws  Exception;

@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Param;
 public interface UserMapper {
     int countByExample(UserExample example);
 
-    int deleteByExample(UserExample example);
+    int deleteByExample(Integer id);
 
     int deleteByPrimaryKey(Integer id);
 
@@ -29,4 +29,6 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+
 }

@@ -2,14 +2,12 @@ package com.jasper.ssm.service;
 
 import com.jasper.ssm.mapper.UserMapper;
 import com.jasper.ssm.pojo.User;
+import com.jasper.ssm.pojo.UserExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by lulee007 on 16/1/19.
- */
 @Service
 public class UserServiceImpl implements UserService {
     //User接口
@@ -21,6 +19,10 @@ public class UserServiceImpl implements UserService {
         List<User> users = userMapper.selectByExample(null);
 
         return users;
+    }
+
+    public void delete(Integer id) {
+        userMapper.deleteByPrimaryKey(id);
     }
 
     public void insertUser(User user) {

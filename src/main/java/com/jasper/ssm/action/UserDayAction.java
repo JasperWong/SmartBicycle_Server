@@ -23,7 +23,7 @@ public class UserDayAction {
     private String title;
     private User user1;
     private List<UserDay> userDays;
-
+    private int id;
     //action 默认执行的入口
     public String execute(){
         try {
@@ -69,5 +69,13 @@ public class UserDayAction {
 
     public void setUser(User user) {
         this.user1 = user;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
