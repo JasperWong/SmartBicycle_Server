@@ -9,13 +9,41 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
-    <title>${title}</title>
+    <title>用户数据</title>
 </head>
+<style type="text/css">
+    *{
+        padding:0;
+        margin:0;
+    }
+    body{
+        width:800px;
+        margin:0 auto;
+    }
+    #top{
+        width:800px;
+        height:50px;
+        /*background:red;*/
+    }
+</style>
 <body>
 <%--显示我们的设置的标题--%>
-<h1>${title}</h1>
+<h1>
+    <div id="top"
+         align="center">
+    集姿势纠正和云互联的骑行装置
+    </div>
+</h1>
+<br/>
+<h2>
+    <div align="center">
+    ${title}
+</h2>
 <%--显示我们从数据库取出来的用户数据--%>
+<br/>
+
 <table>
+    <div align="center">
     <thead>
     <tr>
         <td>
@@ -53,7 +81,6 @@
             <td>${user.hourTotal}</td>
             <td>${user.timesTotal}</td>
         </tr>
-
     </s:iterator>
     </tbody>
 </table>

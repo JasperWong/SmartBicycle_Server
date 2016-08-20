@@ -5,8 +5,10 @@ import com.jasper.ssm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by jasper on 16/8/13.
@@ -38,8 +40,9 @@ public class UserAction {
 //        user.setSex("女");
 //        user.setAddress("3421");
         //设置标题
-        title=""+new Date();
-//        user1=new User();
+//        title="当前时间:"+new Date();
+        title=""+ DateFormat.getDateTimeInstance(2, 2, Locale.CHINESE).format(new java.util.Date());
+// user1=new User();
         return "success";
     }
 
