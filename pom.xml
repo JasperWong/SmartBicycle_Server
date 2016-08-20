@@ -7,6 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <name>SmartBicycle_Server Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- spring版本号 -->
@@ -18,7 +19,20 @@
         <!-- log4j日志文件管理包版本 -->
         <slf4j.version>1.7.5</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
+        <warPackageName>SmartBicycle</warPackageName>
+        <tomcat.deploy.server>localTestServer</tomcat.deploy.server>
+        <tomcat.deploy.serverUrl>http://localhost/manager/text</tomcat.deploy.serverUrl>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>deploy2production</id>
+            <properties>
+                <tomcat.deploy.server>TomcatServer</tomcat.deploy.server>
+                <tomcat.deploy.serverUrl>http://119.29.135.109:8082/manager/text</tomcat.deploy.serverUrl>
+            </properties>
+        </profile>
+    </profiles>
     <dependencies>
         <!-- 单元测试依赖-->
         <dependency>
@@ -127,7 +141,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>ssm_demo</finalName>
+        <finalName>SmartBicycle_Server</finalName>
         <plugins>
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
@@ -138,6 +152,20 @@
                     <overwrite>true</overwrite>
                 </configuration>
             </plugin>
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                    <configuration>
+                        <charset>UTF-8</charset>
+                        <uriEncoding>UTF-8</uriEncoding>
+                        <server>TomcatServer</server>
+                        <username>JasperWong</username>
+                        <password>Hzp19960219</password>
+                        <url>http://119.29.135.109:8082/manager/text</url>
+                        <path>/SmartBicycle</path>
+                    </configuration>
+                </plugin>
         </plugins>
     </build>
 </project>

@@ -19,6 +19,9 @@
     <thead>
     <tr>
         <td>
+            ID
+        </td>
+        <td>
             用户名
         </td>
         <td>
@@ -42,6 +45,7 @@
     <%--struts2的遍历标签,循环取出用户的信息--%>
     <s:iterator value="users" id="user">
         <tr>
+            <td>${user.id}</td>
             <td>${user.username}</td>
             <td>${user.date}</td>
             <td>${user.distanceDay}</td>
