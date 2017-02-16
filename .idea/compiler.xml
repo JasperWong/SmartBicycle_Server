@@ -23,12 +23,10 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="SmartBicycle_Server" />
-        <module name="ssm_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SmartBicycle_Server" target="1.5" />
-      <module name="ssm_demo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
