@@ -52,6 +52,7 @@
         <!-- 指定数据库表 -->
         <table tableName="user"></table>
         <table tableName="T_USER"></table>
+        <table tableName="bicycle_info"></table>
         <!-- 有些表的字段需要指定java类型
          <table schema="" tableName="">
             <columnOverride column="" javaType="" />

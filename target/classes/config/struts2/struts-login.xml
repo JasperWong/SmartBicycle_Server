@@ -31,4 +31,11 @@
 
     </package>
 
+    <package name="update" extends="my-struts" namespace="/bicycle">
+
+        <action name="update" class="com.jasper.ssm.action.BicycleInsertAction">
+            <result name="success">/WEB-INF/views/welcome.jsp</result>
+        </action>
+
+    </package>
 </struts>
