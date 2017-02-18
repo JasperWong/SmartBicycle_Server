@@ -9,6 +9,17 @@
         <result column="latitude" property="latitude" jdbcType="FLOAT"/>
     </resultMap>
 
+    <sql id="Base_Column_List" >
+        id, locker,camera,longitude,latitude
+    </sql>
+
+    <select id="selectById" resultMap="BaseResultMap2" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from bicycle_info
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
     <update id="updateBicycle">
         insert INTO bicycle_info
         (id,locker,camera,longitude,latitude)

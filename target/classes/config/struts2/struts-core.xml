@@ -52,7 +52,6 @@
         </interceptors>
 
         <default-interceptor-ref name="myStack"/>
-        <!-- comment added by lulee007 设置找不到action默认跳转的页面->首页 index -->
         <default-action-ref name="index"/>
         
         <global-results>
@@ -64,7 +63,7 @@
     </package>
 
     <!-- 加载业务-Action配置   -->
-    <include file="config/struts2/struts-login.xml"/>
+    <include file="config/struts2/struts-main.xml"/>
 
       
 </struts>

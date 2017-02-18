@@ -7,7 +7,7 @@
         <!-- User 列表页 -->
         <action name="insert" class="com.jasper.ssm.action.LoginAction">
             <!--action 返回值为success时,则返回页面user.jsp,并解析为html展示到网页-->
-            <result name="success">/WEB-INF/views/welcome.jsp</result>
+            <result name="success">/WEB-INF/views/success.jsp</result>
         </action>
 
     </package>
@@ -34,7 +34,13 @@
     <package name="update" extends="my-struts" namespace="/bicycle">
 
         <action name="update" class="com.jasper.ssm.action.BicycleInsertAction">
-            <result name="success">/WEB-INF/views/welcome.jsp</result>
+            <result name="success">/WEB-INF/views/success.jsp</result>
+        </action>
+    </package>
+
+    <package name="query" extends="my-struts" namespace="/bicycle">
+        <action name="query" class="com.jasper.ssm.action.BicycleIndexAction">
+            <result name="success">/WEB-INF/views/bicycleInfo.jsp</result>
         </action>
 
     </package>

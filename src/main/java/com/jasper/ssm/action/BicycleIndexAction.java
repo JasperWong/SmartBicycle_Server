@@ -20,7 +20,13 @@ public class BicycleIndexAction {
     private float  latitude;
 
     public String execute(){
-
+        if(id!=0){
+            bicycle=bicycleService.SelectById(id);
+            locker=bicycle.getLocker();
+            camera=bicycle.getCamera();
+            longitude=bicycle.getLongitude();
+            latitude=bicycle.getLatitude();
+        }
         return "success";
     }
 

@@ -9,5 +9,5 @@ import com.jasper.ssm.pojo.User;
 public interface BicycleMapper {
 
     int updateBicycle(Bicycle bicycle);
-
+    Bicycle selectById(Integer id);
 }

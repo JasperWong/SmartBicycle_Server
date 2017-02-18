@@ -8,4 +8,5 @@ import com.jasper.ssm.pojo.Bicycle;
  */
 public interface BicycleService {
     void updateBicycle(Bicycle bicycle);
+    Bicycle SelectById(Integer id);
 }

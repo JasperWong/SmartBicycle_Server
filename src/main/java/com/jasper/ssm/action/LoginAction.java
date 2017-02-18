@@ -53,14 +53,6 @@ public class LoginAction {
         return "success";
     }
 
-//    public String login(Login user, Model model) throws Exception {
-//        user= loginService.checkLogin(user.getUsername(), user.getPassword());
-//        if(user!=null){
-//            model.addAttribute(user);
-//            return "welcome";// 路径 WEB-INF/pages/welcome.jsp
-//        }
-//        return "fail";
-//    }
     public String getUsername() {
         return username;
     }
