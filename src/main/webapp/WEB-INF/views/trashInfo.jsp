@@ -7,5 +7,4 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-{"id":${id},"able":"${able}","disable":${disable},"backup":${backup}"others":${others},
-"longitude":${longitude},"latitude":${latitude}}
+{"id":${id},"able":${able},"disable":${disable},"backup":${backup},"others":${others},"longitude":${longitude},"latitude":${latitude}}

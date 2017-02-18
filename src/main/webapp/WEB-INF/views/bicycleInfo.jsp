@@ -7,4 +7,4 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="java.util.*"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-{"id":${id},"locker":"${locker}","camera":${camera},"longitude":${longitude},"latitude":${latitude}}
+{"id":${id},"locker":${locker},"camera":${camera},"longitude":${longitude},"latitude":${latitude}}

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SmartBicycle_Server:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8b08769-1623-414a-965c-a14782eaa7a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/TrashIndexAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/TrashInsertAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/TrashMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/Trash.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/TrashService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/TrashServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/TrashMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trashInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/LoginAction.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/LoginAction.class" />
+    <list default="true" id="a8b08769-1623-414a-965c-a14782eaa7a2" name="Default" comment="finish">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SmartBicycle_Server_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SmartBicycle_Server_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-main.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bicycleInfo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bicycleInfo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trashInfo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trashInfo.jsp" />
     </list>
     <ignored path="SmartBicycle_Server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -156,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trashInfo.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trashInfo.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trashInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+            <state relative-caret-position="405">
+              <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -170,7 +168,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bicycleInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -196,11 +194,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrashMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TrashMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/TrashMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="679">
+              <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
               <folding>
                 <marker date="1487425036301" expanded="true" signature="1003:1116" ph="select from trash" />
                 <marker date="1487425036301" expanded="true" signature="1170:1644" ph="insert INTO trash... " />
@@ -277,10 +275,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/BicycleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/BicycleIndexAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bicycleInfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/BicycleMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/TrsshMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trashInfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/TrashMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/TrashService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/TrashServiceImpl.java" />
@@ -289,6 +285,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/TrashInsertAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/TrashIndexAction.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/TrashMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bicycleInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trashInfo.jsp" />
       </list>
     </option>
   </component>
@@ -808,8 +806,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.26542604" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27701148" />
   </component>
   <component name="RecentsManager">
@@ -1389,7 +1387,7 @@
       <workItem from="1487254926376" duration="13181000" />
       <workItem from="1487320041803" duration="907000" />
       <workItem from="1487326941922" duration="16246000" />
-      <workItem from="1487357072810" duration="19654000" />
+      <workItem from="1487357072810" duration="21065000" />
     </task>
     <task id="LOCAL-00001" summary="finish update">
       <created>1487417695811</created>
@@ -1405,11 +1403,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487421120641</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finish">
+      <created>1487425074176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487425074176</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55458000" />
+    <option name="totallyTimeSpent" value="56869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1443,7 +1448,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26107073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26107073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1469,7 +1474,8 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="true" />
     <MESSAGE value="finish update" />
     <MESSAGE value="finish query" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish query" />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1771,20 +1777,20 @@
         <state relative-caret-position="251">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="29" />
           <folding>
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#344#345#0" expanded="false" />
+            <element signature="e#380#381#0" expanded="false" />
+            <element signature="e#559#560#0" expanded="false" />
+            <element signature="e#591#592#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+            <element signature="e#682#683#0" expanded="false" />
+            <element signature="e#716#717#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#794#795#0" expanded="false" />
+            <element signature="e#834#835#0" expanded="false" />
+            <element signature="e#926#927#0" expanded="false" />
+            <element signature="e#954#955#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1810,8 +1816,8 @@
         <state relative-caret-position="2051">
           <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding>
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#1744#1745#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="false" />
+            <element signature="e#1744#1745#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1921,26 +1927,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bicycleInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trashInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -2061,8 +2051,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/TrashMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        <state relative-caret-position="679">
+          <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding>
             <marker date="1487425036301" expanded="true" signature="1003:1116" ph="select from trash" />
             <marker date="1487425036301" expanded="true" signature="1170:1644" ph="insert INTO trash... " />
@@ -2073,13 +2063,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/bicycleInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/trashInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>SmartBicycle_Server:war</last-edited>
+          <last-edited>SmartBicycle_Server:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
