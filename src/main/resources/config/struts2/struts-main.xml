@@ -32,7 +32,6 @@
     </package>
 
     <package name="update" extends="my-struts" namespace="/bicycle">
-
         <action name="update" class="com.jasper.ssm.action.BicycleInsertAction">
             <result name="success">/WEB-INF/views/success.jsp</result>
         </action>
@@ -42,6 +41,18 @@
         <action name="query" class="com.jasper.ssm.action.BicycleIndexAction">
             <result name="success">/WEB-INF/views/bicycleInfo.jsp</result>
         </action>
+    </package>
 
+    <package name="upload" extends="my-struts" namespace="/trash">
+
+        <action name="upload" class="com.jasper.ssm.action.TrashInsertAction">
+            <result name="success">/WEB-INF/views/success.jsp</result>
+        </action>
+    </package>
+
+    <package name="search" extends="my-struts" namespace="/trash">
+        <action name="search" class="com.jasper.ssm.action.TrashIndexAction">
+            <result name="success">/WEB-INF/views/trashInfo.jsp</result>
+        </action>
     </package>
 </struts>

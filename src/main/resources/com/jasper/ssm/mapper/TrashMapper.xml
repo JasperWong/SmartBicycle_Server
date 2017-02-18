@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jasper.ssm.mapper.TrashMapper" >
+    <resultMap id="BaseResultMap3" type="com.jasper.ssm.pojo.Trash" >
+        <result column="id" property="id" jdbcType="INTEGER" />
+        <result column="able1" property="able1" jdbcType="INTEGER" />
+        <result column="disable1" property="disable1" jdbcType="INTEGER"/>
+        <result column="backup1" property="backup1" jdbcType="INTEGER"/>
+        <result column="others1" property="others1" jdbcType="INTEGER"/>
+        <result column="longitude" property="longitude" jdbcType="FLOAT"/>
+        <result column="latitude" property="latitude" jdbcType="FLOAT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List1" >
+        id,able1,disable1,backup1,others1,longitude,latitude
+    </sql>
+
+    <select id="selectById1" resultMap="BaseResultMap3" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List1" />
+        from trash
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <update id="updateTrash">
+        insert INTO trash
+        (id,able1,disable1,backup1,others1,longitude,latitude)
+        VALUES
+        <!--<foreach collection="list" index="index" item="item"-->
+        <!--separator=",">-->
+            (#{id,jdbcType=INTEGER}, #{able1,jdbcType=INTEGER},
+            #{disable1,jdbcType=INTEGER},#{backup1,jdbcType=INTEGER},#{others1,jdbcType=INTEGER},
+            #{longitude,jdbcType=FLOAT},#{latitude,jdbcType=FLOAT})
+        <!--</foreach>-->
+        ON DUPLICATE KEY UPDATE
+            able1 =#{able1,jdbcType=INTEGER},
+            disable1 = #{disable1,jdbcType=INTEGER},
+            others1=#{others1,jdbcType=INTEGER},
+            longitude=#{longitude,jdbcType=FLOAT},
+            latitude=#{latitude,jdbcType=FLOAT}
+    </update>
+
+</mapper>
+
+
+
+
+
