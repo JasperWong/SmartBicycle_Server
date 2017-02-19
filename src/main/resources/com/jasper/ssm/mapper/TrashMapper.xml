@@ -35,6 +35,7 @@
         ON DUPLICATE KEY UPDATE
             able1 =#{able1,jdbcType=INTEGER},
             disable1 = #{disable1,jdbcType=INTEGER},
+            backup1=#{backup1,jdbcType=INTEGER},
             others1=#{others1,jdbcType=INTEGER},
             longitude=#{longitude,jdbcType=FLOAT},
             latitude=#{latitude,jdbcType=FLOAT}
