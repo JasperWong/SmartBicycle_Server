@@ -2,6 +2,7 @@ package com.jasper.ssm.action;
 
 import com.jasper.ssm.pojo.Bicycle;
 import com.jasper.ssm.service.BicycleService;
+import javafx.scene.transform.MatrixType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -15,21 +16,24 @@ public class BicycleInsertAction {
     private Bicycle bicycle=new Bicycle();
     private Integer id;
     private Integer locker;
-    private Integer camera;
+    private Integer alarm;
+    private Integer status;
     private float  longitude;
     private float  latitude;
-
     public String execute(){
         if(id!=null)
             bicycle.setId(id);
         if(locker!=null)
             bicycle.setLocker(locker);
-        if(camera!=null)
-            bicycle.setCamera(camera);
+        if(alarm!=null)
+            bicycle.setAlarm(alarm);
         if(latitude!=0)
             bicycle.setLatitude(latitude);
         if(longitude!=0)
             bicycle.setLongitude(longitude);
+        if(status!=0){
+            bicycle.setStatus(status);
+        }
         bicycleService.updateBicycle(bicycle);
         return "success";
     }
@@ -42,12 +46,12 @@ public class BicycleInsertAction {
         this.locker = locker;
     }
 
-    public Integer getCamera() {
-        return camera;
+    public Integer getAlarm() {
+        return alarm;
     }
 
-    public void setCamera(Integer camera) {
-        this.camera = camera;
+    public void setAlarm(Integer alarm) {
+        this.alarm =alarm;
     }
 
     public float getLongitude() {
@@ -64,6 +68,14 @@ public class BicycleInsertAction {
 
     public void setLatitude(float latitude) {
         this.latitude = latitude;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public Integer getId() {

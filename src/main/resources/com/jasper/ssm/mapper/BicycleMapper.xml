@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.jasper.ssm.mapper.BicycleMapper" >
-    <resultMap id="BaseResultMap2" type="com.jasper.ssm.pojo.Bicycle" >
+    <resultMap id="BicycleResultMap" type="com.jasper.ssm.pojo.Bicycle" >
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="locker" property="locker" jdbcType="INTEGER" />
-        <result column="camera" property="camera" jdbcType="INTEGER"/>
+        <result column="alarm" property="alarm" jdbcType="INTEGER"/>
         <result column="longitude" property="longitude" jdbcType="FLOAT"/>
         <result column="latitude" property="latitude" jdbcType="FLOAT"/>
+        <result column="status" property="status" javaType="INTEGER"/>
+        
+        
     </resultMap>
 
-    <sql id="Base_Column_List" >
-        id, locker,camera,longitude,latitude
+    <sql id="Bicycle_Column_List" >
+        id, locker,alarm,longitude,latitude,status
     </sql>
 
-    <select id="selectById" resultMap="BaseResultMap2" parameterType="java.lang.Integer" >
+    <select id="selectById" resultMap="BicycleResultMap" parameterType="java.lang.Integer" >
         select
-        <include refid="Base_Column_List" />
+        <include refid="Bicycle_Column_List" />
         from bicycle_info
         where id = #{id,jdbcType=INTEGER}
     </select>
 
     <update id="updateBicycle">
         insert INTO bicycle_info
-        (id,locker,camera,longitude,latitude)
+        (id,locker,alarm,longitude,latitude,status)
         VALUES
         <!--<foreach collection="list" index="index" item="item"-->
         <!--separator=",">-->
             (#{id,jdbcType=INTEGER}, #{locker,jdbcType=INTEGER},
-            #{camera,jdbcType=INTEGER},#{longitude,jdbcType=FLOAT},#{latitude,jdbcType=FLOAT})
+            #{alarm,jdbcType=INTEGER},#{longitude,jdbcType=FLOAT},#{latitude,jdbcType=FLOAT},#{status,jdbcType=INTEGER})
         <!--</foreach>-->
         ON DUPLICATE KEY UPDATE
             locker =#{locker,jdbcType=INTEGER},
-            camera = #{camera,jdbcType=INTEGER},
+            alarm = #{alarm,jdbcType=INTEGER},
             longitude=#{longitude,jdbcType=FLOAT},
-            latitude=#{latitude,jdbcType=FLOAT}
+            latitude=#{latitude,jdbcType=FLOAT},
+            status=#{status,jdbcType=INTEGER}
     </update>
 
 </mapper>

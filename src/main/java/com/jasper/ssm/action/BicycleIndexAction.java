@@ -15,7 +15,8 @@ public class BicycleIndexAction {
     private Bicycle bicycle=new Bicycle();
     private Integer id;
     private Integer locker;
-    private Integer camera;
+    private Integer alarm;
+    private Integer status;
     private float  longitude;
     private float  latitude;
 
@@ -23,9 +24,10 @@ public class BicycleIndexAction {
         if(id!=0){
             bicycle=bicycleService.SelectById(id);
             locker=bicycle.getLocker();
-            camera=bicycle.getCamera();
+            alarm=bicycle.getAlarm();
             longitude=bicycle.getLongitude();
             latitude=bicycle.getLatitude();
+            status=bicycle.getStatus();
         }
         return "success";
     }
@@ -38,12 +40,12 @@ public class BicycleIndexAction {
         this.locker = locker;
     }
 
-    public Integer getCamera() {
-        return camera;
+    public Integer getAlarm() {
+        return alarm;
     }
 
-    public void setCamera(Integer camera) {
-        this.camera = camera;
+    public void setAlarm(Integer alarm) {
+        this.alarm = alarm;
     }
 
     public float getLongitude() {
@@ -84,5 +86,13 @@ public class BicycleIndexAction {
 
     public void setBicycleService(BicycleService bicycleService) {
         this.bicycleService = bicycleService;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 }

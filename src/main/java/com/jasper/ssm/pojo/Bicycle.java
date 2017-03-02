@@ -6,10 +6,10 @@ package com.jasper.ssm.pojo;
 public class Bicycle {
     private Integer id;
     private Integer locker;
-    private Integer camera;
+    private Integer alarm;
+    private Integer status;
     private float   longitude;
     private float   latitude;
-
 
     public Integer getLocker() {
         return locker;
@@ -19,12 +19,12 @@ public class Bicycle {
         this.locker = locker;
     }
 
-    public Integer getCamera() {
-        return camera;
+    public Integer getAlarm() {
+        return alarm;
     }
 
-    public void setCamera(Integer camera) {
-        this.camera = camera;
+    public void setAlarm(Integer alarm) {
+        this.alarm = alarm;
     }
 
     public float getLongitude() {
@@ -49,5 +49,13 @@ public class Bicycle {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 }
