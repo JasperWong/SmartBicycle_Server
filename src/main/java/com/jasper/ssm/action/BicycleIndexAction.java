@@ -13,6 +13,7 @@ public class BicycleIndexAction {
     @Autowired
     private BicycleService bicycleService;
     private Bicycle bicycle=new Bicycle();
+    private Bicycle bicycleStatus=new Bicycle();
     private Integer id;
     private Integer locker;
     private Integer alarm;
@@ -23,8 +24,9 @@ public class BicycleIndexAction {
     public String execute(){
         if(id!=0){
             bicycle=bicycleService.SelectById(id);
-            locker=bicycle.getLocker();
-            alarm=bicycle.getAlarm();
+            bicycleStatus=bicycleService.SelectStatusById(id);
+            locker=bicycleStatus.getLocker();
+            alarm=bicycleStatus.getAlarm();
             longitude=bicycle.getLongitude();
             latitude=bicycle.getLatitude();
             status=bicycle.getStatus();
@@ -95,4 +97,6 @@ public class BicycleIndexAction {
     public void setStatus(Integer status) {
         this.status = status;
     }
+
+
 }

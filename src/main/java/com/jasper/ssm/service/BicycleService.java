@@ -10,4 +10,5 @@ public interface BicycleService {
     void updateBicycle(Bicycle bicycle);
     void updateBicycleStatus(Bicycle bicycle);
     Bicycle SelectById(Integer id);
+    Bicycle SelectStatusById(Integer id);
 }

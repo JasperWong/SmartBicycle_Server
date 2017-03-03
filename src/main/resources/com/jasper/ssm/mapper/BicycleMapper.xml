@@ -13,13 +13,24 @@
     </resultMap>
 
     <sql id="Bicycle_Column_List" >
-        id, locker,alarm,longitude,latitude,status
+        id,longitude,latitude,status
+    </sql>
+
+    <sql id="Bicycle_Status_List" >
+         id, locker,alarm
     </sql>
 
     <select id="selectById" resultMap="BicycleResultMap" parameterType="java.lang.Integer" >
         select
         <include refid="Bicycle_Column_List" />
         from bicycle_info
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectStatusById" resultMap="BicycleResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Bicycle_Status_List" />
+        from bicycle_status
         where id = #{id,jdbcType=INTEGER}
     </select>
 

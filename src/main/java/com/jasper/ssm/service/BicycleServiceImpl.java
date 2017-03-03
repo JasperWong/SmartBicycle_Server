@@ -26,4 +26,9 @@ public class BicycleServiceImpl implements BicycleService{
         return bicycle;
     }
 
+    public Bicycle SelectStatusById(Integer id) {
+        Bicycle bicycle=bicycleMapper.selectStatusById(id);
+        return bicycle;
+    }
+
 }
