@@ -20,21 +20,20 @@ public class BicycleInsertAction {
     private Integer status;
     private float  longitude;
     private float  latitude;
+    private int select=0;//1:经纬度和状态 2:锁,报警
     public String execute(){
-        if(id!=null)
-            bicycle.setId(id);
-        if(locker!=null)
-            bicycle.setLocker(locker);
-        if(alarm!=null)
-            bicycle.setAlarm(alarm);
-        if(latitude!=0)
-            bicycle.setLatitude(latitude);
-        if(longitude!=0)
-            bicycle.setLongitude(longitude);
-        if(status!=0){
-            bicycle.setStatus(status);
+        if(select==1){
+            if(id!=null)    bicycle.setId(id);
+            if(latitude!=0)     bicycle.setLatitude(latitude);
+            if(longitude!=0)    bicycle.setLongitude(longitude);
+            if(status!=0)   bicycle.setStatus(status);
+            bicycleService.updateBicycle(bicycle);
+        }else if(select==2){
+            if(id!=null)    bicycle.setId(id);
+            if(locker!=null)    bicycle.setLocker(locker);
+            if(alarm!=null)     bicycle.setAlarm(alarm);
+            bicycleService.updateBicycleStatus(bicycle);
         }
-        bicycleService.updateBicycle(bicycle);
         return "success";
     }
 
@@ -92,6 +91,14 @@ public class BicycleInsertAction {
 
     public void setBicycle(Bicycle bicycle) {
         this.bicycle = bicycle;
+    }
+
+    public int getSelect() {
+        return select;
+    }
+
+    public void setSelect(int select) {
+        this.select = select;
     }
 
     public BicycleService getBicycleService() {

@@ -25,19 +25,30 @@
 
     <update id="updateBicycle">
         insert INTO bicycle_info
-        (id,locker,alarm,longitude,latitude,status)
+        (id,longitude,latitude,status)
         VALUES
         <!--<foreach collection="list" index="index" item="item"-->
         <!--separator=",">-->
-            (#{id,jdbcType=INTEGER}, #{locker,jdbcType=INTEGER},
-            #{alarm,jdbcType=INTEGER},#{longitude,jdbcType=FLOAT},#{latitude,jdbcType=FLOAT},#{status,jdbcType=INTEGER})
+            (#{id,jdbcType=INTEGER}, #{longitude,jdbcType=FLOAT},#{latitude,jdbcType=FLOAT},#{status,jdbcType=INTEGER})
         <!--</foreach>-->
         ON DUPLICATE KEY UPDATE
-            locker =#{locker,jdbcType=INTEGER},
-            alarm = #{alarm,jdbcType=INTEGER},
             longitude=#{longitude,jdbcType=FLOAT},
             latitude=#{latitude,jdbcType=FLOAT},
             status=#{status,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateBicycleStatus">
+        insert INTO bicycle_status
+        (id,locker,alarm)
+        VALUES
+        (#{id,jdbcType=INTEGER},#{locker,jdbcType=INTEGER},
+            #{alarm,jdbcType=INTEGER})
+        ON DUPLICATE KEY UPDATE
+          locker =#{locker,jdbcType=INTEGER},
+          alarm = #{alarm,jdbcType=INTEGER}
+
+
+
     </update>
 
 </mapper>

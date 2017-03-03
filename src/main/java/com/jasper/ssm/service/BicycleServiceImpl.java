@@ -17,6 +17,10 @@ public class BicycleServiceImpl implements BicycleService{
         bicycleMapper.updateBicycle(bicycle);
     }
 
+    public void updateBicycleStatus(Bicycle bicycle) {
+        bicycleMapper.updateBicycleStatus(bicycle);
+    }
+
     public Bicycle SelectById(Integer id) {
         Bicycle bicycle=bicycleMapper.selectById(id);
         return bicycle;
