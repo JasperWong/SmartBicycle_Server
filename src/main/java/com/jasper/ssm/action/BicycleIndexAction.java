@@ -20,9 +20,16 @@ public class BicycleIndexAction {
     private Integer status;
     private float  longitude;
     private float  latitude;
+    private Integer select=0;
 
     public String execute(){
-        if(id!=0){
+        if(select==1){
+
+
+
+
+        }
+        else if(id!=0){
             bicycle=bicycleService.SelectById(id);
             bicycleStatus=bicycleService.SelectStatusById(id);
             locker=bicycleStatus.getLocker();
@@ -31,7 +38,8 @@ public class BicycleIndexAction {
             latitude=bicycle.getLatitude();
             status=bicycle.getStatus();
         }
-        return "success";
+        if(select==1) return "photo";
+        else return "success";
     }
 
     public Integer getLocker() {
@@ -98,5 +106,11 @@ public class BicycleIndexAction {
         this.status = status;
     }
 
+    public Integer getSelect() {
+        return select;
+    }
 
+    public void setSelect(Integer select) {
+        this.select = select;
+    }
 }

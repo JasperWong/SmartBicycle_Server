@@ -40,6 +40,7 @@
     <package name="query" extends="my-struts" namespace="/bicycle">
         <action name="query" class="com.jasper.ssm.action.BicycleIndexAction">
             <result name="success">/WEB-INF/views/bicycleInfo.jsp</result>
+            <result name="photo">/WEB-INF/views/photo.jsp</result>
         </action>
     </package>
 
