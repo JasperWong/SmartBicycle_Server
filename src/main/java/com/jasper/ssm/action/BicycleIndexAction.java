@@ -25,9 +25,6 @@ public class BicycleIndexAction {
     public String execute(){
         if(select==1){
 
-
-
-
         }
         else if(id!=0){
             bicycle=bicycleService.SelectById(id);
@@ -36,7 +33,7 @@ public class BicycleIndexAction {
             alarm=bicycleStatus.getAlarm();
             longitude=bicycle.getLongitude();
             latitude=bicycle.getLatitude();
-            status=bicycle.getStatus();
+            status=bicycleStatus.getStatus();
         }
         if(select==1) return "photo";
         else return "success";
